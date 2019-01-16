@@ -24,7 +24,7 @@ public class ImageEditor {
         String inputFileName = args[0];
         String outputfileName = args[1];
         String transformation = args[2];
-        int blurNum = Integer.parseInt(args[3]);
+        int blurNum = args.length > 3 ? Integer.parseInt(args[3]) : 0;
 
         ProgramState currentState = ProgramState.P3;
 
